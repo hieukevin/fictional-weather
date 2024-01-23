@@ -1,0 +1,92 @@
+.flex-wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.flex-wrapper Link{
+    position: relative;
+    flex:1;
+    text-align: center;
+    text-decoration: none;
+    color: #b63131;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: flex .4s;
+}
+
+.flex-wrapper .one{
+    background-image: url(https://i.pinimg.com/564x/ad/7a/fd/ad7afd2d42200225e0fd5aa876e71a36.jpg);
+}
+.flex-wrapper .two{
+    background-image: url(https://i.pinimg.com/564x/58/04/28/5804288ff9fddf3f99b42685557f76c1.jpg);
+}
+.flex-wrapper .three{
+    background-image: url(https://i.pinimg.com/474x/9e/00/f9/9e00f9dae95b824d14e53fd68a3921c2.jpg);
+}
+.flex-wrapper .four{
+    background-image: url(https://i.pinimg.com/564x/2f/b3/0a/2fb30aea5ab009cbec0b998f691025cc.jpg);
+}
+.flex-wrapper .five{
+    background-image: url(https://i.pinimg.com/564x/5f/0e/c0/5f0ec035b37c73822b01c50b7b69f184.jpg);
+}
+
+.flex-wrapper Link:hover{
+    flex:3;
+}
+.flex-wrapper .overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color .4s;
+}
+
+.flex-wrapper Link:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flex-wrapper .overlay-inner *{
+    visibility: hidden;
+    opacity: 0;
+    transform-style: preserve-3d;
+}
+
+.flex-wrapper .overlay h2{
+    transform: translate3d(0, -60px, 0);
+}
+.flex-wrapper .overlay p{
+    transform: translate3d(0, 60px, 0);
+}
+
+.flex-wrapper Link:hover .overlay-inner *{
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: all .3s .3s;
+}
+
+@media screen and (max-width: 800px){
+
+    .flex-wrapper{
+        flex-direction: column;
+    }
+    .flex-wrapper Link:hover{
+        flex:1;
+    }
+
+    .flex-wrapper Link:hover .overlay{
+        background-color: transparent;
+    }
+    .flex-wrapper .overlay h2,
+    .flex-wrapper .overlay p{
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}
