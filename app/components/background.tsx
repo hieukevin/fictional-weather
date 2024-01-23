@@ -2,11 +2,10 @@ import React from "react";
 
 type Props = {
   imageURL: string;
-  mobileImageURL: string;
   children?: React.ReactNode;
 };
 
-const Background = ({ imageURL, mobileImageURL, children }: Props) => {
+const Background = ({ imageURL, children }: Props) => {
   return (
     <video
       autoPlay
