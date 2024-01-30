@@ -1,21 +1,23 @@
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 
 type Props = {
-  imageURL: string;
-  children?: React.ReactNode;
+  imageURL: StaticImageData;
+  alt: string;
 };
 
-const Background = ({ imageURL, children }: Props) => {
+const Background = ({ imageURL,alt }: Props) => {
   return (
-    <video
-      autoPlay
-      muted
-      loop
+    <Image 
       src={imageURL}
-      className="fixed min-w-full min-h-full object-cover -z-10"
-    >
-      {children}
-    </video>
+      fill
+      alt={alt}
+      placeholder='blur'
+      blurDataURL={imageURL.blurDataURL}
+      sizes="100vw"
+      className="backgroundImg" />
+        
+    
   );
 };
 
