@@ -7,8 +7,8 @@ import night from '../../public/backgrounds/gotham/night.png'
 import sunset from '../../public/backgrounds/gotham/sunset.png'
 import rain from '../../public/backgrounds/gotham/rain.png'
 import sunrise from '../../public/backgrounds/gotham/sunrise.png'
-import { filterNextSevenDaysAndCurrentHour } from '../forecast';
-import { changeImageURL } from '../background';
+import { filterNextSevenDaysAndCurrentHour } from '../../utils/forecast';
+import { changeImageURL } from '../../utils/background';
 import Background from '@/components/background';
 import PageLayout from '@/components/weatherLayout';
 

@@ -5,9 +5,9 @@ import night from '../../public/backgrounds/got/night.png'
 import sunset from '../../public/backgrounds/got/sunset.png'
 import rain from '../../public/backgrounds/got/rain.png'
 import cloudy from '../../public/backgrounds/got/cloudy.png'
-import { filterNextSevenDaysAndCurrentHour } from '../forecast';
+import { filterNextSevenDaysAndCurrentHour } from '../../utils/forecast';
 import { kingslandingWeather } from '@/public/weatherData/kingslandingWeather';
-import { changeImageURL } from '../background';
+import { changeImageURL } from '../../utils/background';
 import Background from '@/components/background'
 
 function Layout({children}: {children: React.ReactNode}) {

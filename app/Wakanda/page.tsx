@@ -5,8 +5,8 @@ import night from '../../public/backgrounds/wakanda/night.png'
 import sunset from '../../public/backgrounds/wakanda/sunset.png'
 import sunrise from '../../public/backgrounds/wakanda/sunrise.png'
 import { wakandaWeather } from '@/public/weatherData/wakandaWeather';
-import { filterNextSevenDaysAndCurrentHour } from '../forecast';
-import { changeImageURL } from '../background';
+import { filterNextSevenDaysAndCurrentHour } from '../../utils/forecast';
+import { changeImageURL } from '../../utils/background';
 import Background from '@/components/background'
 import PageLayout from '@/components/weatherLayout'
 

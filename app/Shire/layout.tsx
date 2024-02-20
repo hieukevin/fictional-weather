@@ -7,8 +7,8 @@ import rain from "@/public/backgrounds/hobbiton/rain.png";
 import cloudy from "@/public/backgrounds/hobbiton/cloudy.png";
 import Background from "../../components/background";
 import { hobbitonWeather } from "@/public/weatherData/hobbitonWeather";
-import { filterNextSevenDaysAndCurrentHour } from "../forecast";
-import { changeImageURL } from "../background";
+import { filterNextSevenDaysAndCurrentHour } from "../../utils/forecast";
+import { changeImageURL } from "../../utils/background";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const {currentHourData} = filterNextSevenDaysAndCurrentHour(hobbitonWeather);

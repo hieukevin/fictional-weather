@@ -1,10 +1,8 @@
-import React from 'react'
-import { DayForecast } from './dayForecast'
-import { filterNextSevenDaysAndCurrentHour, formattedTodayDate } from '../app/forecast';
-import { WeatherItem } from '../app/Type';
-import { GoHome } from "react-icons/go";
-import { IoMdArrowBack } from "react-icons/io";
 import Link from 'next/link';
+import { GoHome } from "react-icons/go";
+import { WeatherItem } from '../app/Type';
+import { filterNextSevenDaysAndCurrentHour, formattedTodayDate } from '../utils/forecast';
+import { DayForecast } from './dayForecast';
 
 
 function PageLayout({place, world, weatherReport} : {place: string, world: string, weatherReport: WeatherItem[]}) {

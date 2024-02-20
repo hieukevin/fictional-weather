@@ -5,8 +5,8 @@ import night from '../../public/backgrounds/asgard/night.png'
 import rain from '../../public/backgrounds/asgard/rain.png'
 import snow from '../../public/backgrounds/asgard/snowing.png'
 import { asgardWeather } from '@/public/weatherData/asgardWeather';
-import { filterNextSevenDaysAndCurrentHour } from '../forecast';
-import { changeImageURL } from '../background';
+import { filterNextSevenDaysAndCurrentHour } from '../../utils/forecast';
+import { changeImageURL } from '../../utils/background';
 import Background from '@/components/background'
 import PageLayout from '@/components/weatherLayout'
 

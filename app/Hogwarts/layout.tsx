@@ -1,14 +1,14 @@
 'use client'
 import React, {useEffect, useState} from "react";
 import sunny from "@/public/backgrounds/hogwarts/sunny.png";
-import night from "@/public/backgrounds/hogwarts/night.jpeg";
+import night from "@/public/backgrounds/hogwarts/night.png";
 import sunset from "@/public/backgrounds/hogwarts/sunset.png";
 import rain from "@/public/backgrounds/hogwarts/rain.png";
 import snow from "@/public/backgrounds/hogwarts/snow.png";
 import cloudy from "@/public/backgrounds/hogwarts/cloudy.png";
 import { hogwartsWeather } from "@/public/weatherData/hogwartsWeather";
-import { filterNextSevenDaysAndCurrentHour } from "../forecast";
-import { changeImageURL } from "../background";
+import { filterNextSevenDaysAndCurrentHour } from "../../utils/forecast";
+import { changeImageURL } from "../../utils/background";
 import Background from "@/components/background";
 
 
