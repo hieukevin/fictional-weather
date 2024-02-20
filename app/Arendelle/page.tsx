@@ -1,13 +1,13 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Background from '../components/background';
-import PageLayout from '../components/weatherLazout';
 import sunny from '../../public/backgrounds/frozen/sunny.png'
 import night from '../../public/backgrounds/frozen/night.png'
 import sunset from '../../public/backgrounds/frozen/sunset.png'
 import { frozenWeather } from '@/public/weatherData/frozenWeather';
 import { filterNextSevenDaysAndCurrentHour } from '../forecast';
 import { changeImageURL } from '../background';
+import Background from '@/components/background'
+import PageLayout from '@/components/weatherLayout'
 
 function Page() {
   const {currentHourData} = filterNextSevenDaysAndCurrentHour(frozenWeather);

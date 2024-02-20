@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Background from '../components/background';
-import PageLayout from '../components/weatherLazout';
+import Background from '../../components/background';
+import PageLayout from '../../components/weatherLayout';
 import sunny from '../../public/backgrounds/avatar/sunny.png'
 import night from '../../public/backgrounds/avatar/night.png'
 import { avatarWeather } from '@/public/weatherData/avatarWeather';

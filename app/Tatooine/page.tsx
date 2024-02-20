@@ -1,7 +1,5 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Background from '../components/background';
-import PageLayout from '../components/weatherLazout';
 import sunny from '../../public/backgrounds/tatooine/sunny.png'
 import night from '../../public/backgrounds/tatooine/night.png'
 import sunset from '../../public/backgrounds/tatooine/sunset.png'
@@ -9,6 +7,8 @@ import sunrise from '../../public/backgrounds/tatooine/sunrise.png'
 import { tatooineWeather } from '@/public/weatherData/tatooineWeather';
 import { filterNextSevenDaysAndCurrentHour } from '../forecast';
 import { changeImageURL } from '../background';
+import Background from '@/components/background'
+import PageLayout from '@/components/weatherLayout'
 
 function Page() {
   const {currentHourData} = filterNextSevenDaysAndCurrentHour(tatooineWeather);

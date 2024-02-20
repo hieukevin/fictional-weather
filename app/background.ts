@@ -1,7 +1,5 @@
-'use server'
 import { StaticImageData } from "next/image";
 import { HourlyData, PartOfDay, WeatherItem } from "./Type";
-import { filterNextSevenDaysAndCurrentHour } from "./forecast";
 
 const convert12hTo24h = (time12h: string): string => {
   const [time, period] = time12h.split(" ");

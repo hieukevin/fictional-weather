@@ -1,6 +1,6 @@
 import React from 'react'
-import PageLayout from '../components/weatherLazout'
 import { kingslandingWeather } from '@/public/weatherData/kingslandingWeather'
+import PageLayout from '@/components/weatherLayout'
 
 function Page() {
   return (

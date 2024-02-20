@@ -5,7 +5,7 @@ import night from "@/public/backgrounds/hobbiton/night.png";
 import sunset from "@/public/backgrounds/hobbiton/sunset.png";
 import rain from "@/public/backgrounds/hobbiton/rain.png";
 import cloudy from "@/public/backgrounds/hobbiton/cloudy.png";
-import Background from "../components/background";
+import Background from "../../components/background";
 import { hobbitonWeather } from "@/public/weatherData/hobbitonWeather";
 import { filterNextSevenDaysAndCurrentHour } from "../forecast";
 import { changeImageURL } from "../background";

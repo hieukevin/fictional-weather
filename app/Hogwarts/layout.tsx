@@ -1,6 +1,5 @@
 'use client'
 import React, {useEffect, useState} from "react";
-import Background from "@/app/components/background";
 import sunny from "@/public/backgrounds/hogwarts/sunny.png";
 import night from "@/public/backgrounds/hogwarts/night.jpeg";
 import sunset from "@/public/backgrounds/hogwarts/sunset.png";
@@ -10,6 +9,7 @@ import cloudy from "@/public/backgrounds/hogwarts/cloudy.png";
 import { hogwartsWeather } from "@/public/weatherData/hogwartsWeather";
 import { filterNextSevenDaysAndCurrentHour } from "../forecast";
 import { changeImageURL } from "../background";
+import Background from "@/components/background";
 
 
 const Layout = ({ children }: { children: React.ReactNode }) => {

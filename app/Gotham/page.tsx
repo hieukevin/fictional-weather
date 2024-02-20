@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Background from '../components/background';
-import PageLayout from '../components/weatherLazout';
+
 import { gothamWeather } from '@/public/weatherData/gothamWeather';
 import sunny from '../../public/backgrounds/gotham/sunny.png'
 import night from '../../public/backgrounds/gotham/night.png'
@@ -10,6 +9,8 @@ import rain from '../../public/backgrounds/gotham/rain.png'
 import sunrise from '../../public/backgrounds/gotham/sunrise.png'
 import { filterNextSevenDaysAndCurrentHour } from '../forecast';
 import { changeImageURL } from '../background';
+import Background from '@/components/background';
+import PageLayout from '@/components/weatherLayout';
 
 function Page() {
   const {currentHourData} = filterNextSevenDaysAndCurrentHour(gothamWeather);
