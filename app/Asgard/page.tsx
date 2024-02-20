@@ -1,14 +1,14 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import sunny from '../../public/backgrounds/asgard/sunny.webp'
+import Background from '@/components/background'
+import PageLayout from '@/components/weatherLayout'
+import { asgardWeather } from '@/public/weatherData/asgardWeather'
+import { useEffect, useState } from 'react'
 import night from '../../public/backgrounds/asgard/night.png'
 import rain from '../../public/backgrounds/asgard/rain.png'
 import snow from '../../public/backgrounds/asgard/snow.png'
-import { asgardWeather } from '@/public/weatherData/asgardWeather';
-import { filterNextSevenDaysAndCurrentHour } from '../../utils/forecast';
-import { changeImageURL } from '../../utils/background';
-import Background from '@/components/background'
-import PageLayout from '@/components/weatherLayout'
+import sunny from '../../public/backgrounds/asgard/sunny.png'
+import { changeImageURL } from '../../utils/background'
+import { filterNextSevenDaysAndCurrentHour } from '../../utils/forecast'
 
 function Page() {
   const {currentHourData} = filterNextSevenDaysAndCurrentHour(asgardWeather);
