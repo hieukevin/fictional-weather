@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import sunny from '../../public/backgrounds/asgard/sunny.webp'
 import night from '../../public/backgrounds/asgard/night.png'
 import rain from '../../public/backgrounds/asgard/rain.png'
-import snow from '../../public/backgrounds/asgard/snowing.png'
+import snow from '../../public/backgrounds/asgard/snow.png'
 import { asgardWeather } from '@/public/weatherData/asgardWeather';
 import { filterNextSevenDaysAndCurrentHour } from '../../utils/forecast';
 import { changeImageURL } from '../../utils/background';
