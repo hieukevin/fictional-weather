@@ -12,7 +12,7 @@ import { changeImageURL } from "../../utils/background";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const {currentHourData} = filterNextSevenDaysAndCurrentHour(hobbitonWeather);
-  
+
   const [imageURL, setImageURL] = useState(sunny);
   useEffect(() => {
     changeImageURL(hobbitonWeather, currentHourData, setImageURL, sunny, night, sunny, sunset, {rain, cloudy});
