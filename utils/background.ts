@@ -19,10 +19,10 @@ const checkPartofDay = (data: WeatherItem): PartOfDay => {
   const currentHour = new Date().getHours();
   const sunriseHour = Number(convert12hTo24h(data.astro.sunrise).split(":")[0]);
   const sunsetHour = Number(convert12hTo24h(data.astro.sunset).split(":")[0]);
-
+  console.log(currentHour, sunriseHour, sunsetHour);
   if (currentHour > sunriseHour && currentHour < sunsetHour) {
     return PartOfDay.DAY;
-  } else if (currentHour == sunriseHour - 1 || currentHour == sunsetHour) {
+  } else if (currentHour == sunriseHour - 1 || currentHour == sunriseHour) {
     return PartOfDay.SUNRISE;
   } else if (currentHour == sunriseHour || currentHour == sunsetHour + 1) {
     return PartOfDay.SUNSET;
@@ -42,7 +42,7 @@ export const changeImageURL = async (
 { cloudy, rain, snow }: { cloudy?: StaticImageData, rain?: StaticImageData, snow?: StaticImageData }
 ) => {
   const currentPartOfDay = checkPartofDay(data[0]);
-
+  console.log(currentPartOfDay);
   switch (currentPartOfDay) {
     case PartOfDay.NIGHT:
       setImageURL(night);

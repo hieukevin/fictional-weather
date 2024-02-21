@@ -40,9 +40,9 @@ export type Condition = {
   };
 
   export enum PartOfDay {
-    SUNRISE,
-    DAY,
-    SUNSET,
-    NIGHT,
+    SUNRISE = 0,
+    DAY = 1,
+    SUNSET = 2,
+    NIGHT = 3,
   }
   
